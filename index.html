@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Covid Tracker</title>
+    <style>
+        @media only screen and (min-width: 550px) {
+          .main-title{
+              font-size: 2rem;
+              
+          }
+        }
+        @media only screen and (min-width: 800px) {
+          .main-title{
+              font-size: 2.5rem;
+          }
+        }
+        #label{
+            font-size: 1.5rem;
+            color:white;
+        }
+        header{
+            background-color: rgb(211, 226, 240);
+        }
+        #search{
+            overflow: hidden;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container p-0">
+      <header class="border border-danger">  
+        <div class="row text-center p-2" >
+          <div class="col-3 my-auto">
+            <img src="img1.png" class=" w-100" >
+          </div>
+          <div class="col-6 my-auto">
+            <p class=" main-title ">COVID-19 TRACKER</p>
+          </div>
+          <div class="col-3 my-auto">
+            <img src="img2.png" class="w-100">
+          </div>
+        </div>
+      </header>
+      <section id="search" class="border border-danger">
+          <div class="row py-2 bg-info">
+            <div class="col-8 m-auto  text-center">
+                <label for="search-box" id="label">Search</label>
+                <input type="text" id="search-box" class="w-75 mx-3" placeholder="Country name">
+            </div>
+          </div>
+      </section>
+      <!-- global cases -->
+      <div style="overflow-x: auto;">
+      <section id="global-case">
+        <div class="row py-2">
+            <h2 class=" py-2 mx-auto">Global cases</h2>
+          <div class="col-12 mx-auto">
+            <table class="table table-striped">
+                <thead class="thead-dark ">
+                   <tr>
+                      <th>NewConfirmed</th>
+                      <th>TotalConfirmed</th>
+                      <th>NewDeaths</th>
+                      <th>TotalDeaths</th>
+                      <th>TotalRecovered</th>
+                   </tr>
+                </thead>
+                <tbody id="global-body">
+
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </section>
+      <!-- cases in india -->
+      <section id="india-case">
+        <div class="row py-2 ">
+            <h2 class=" py-2 mx-auto">Cases in India</h2>
+          <div class="col-12 mx-auto">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                   <tr>
+                      <th>Country</th>
+                      <th>NewConfirmed</th>
+                      <th>TotalConfirmed</th>
+                      <th>NewDeaths</th>
+                      <th>TotalDeaths</th>
+                      <th>TotalRecovered</th>
+                   </tr>
+                </thead>
+                <tbody id="india-body">
+
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </section>
+      <!-- other country cases -->
+      <section id="othercountry-case">
+        <div class="row py-2">
+          <div class="col-12 mx-auto">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                   <tr>
+                      <th>Country</th>
+                      <th>NewConfirmed</th>
+                      <th>TotalConfirmed</th>
+                      <th>NewDeaths</th>
+                      <th>TotalDeaths</th>
+                      <th>TotalRecovered</th>
+                   </tr>
+                </thead>
+                <tbody id="other-body">
+
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </section>
+    </div>
+   </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
