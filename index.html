@@ -31,6 +31,12 @@
         #search{
             overflow: hidden;
         }
+        #date{
+          font-family: monospace;
+          font-size: small;
+           color:indigo;
+          padding-left: 1em;
+        }
     </style>
   </head>
   <body>
@@ -49,20 +55,25 @@
         </div>
       </header>
       <section id="search" class="border border-danger">
-          <div class="row py-2 bg-info">
-            <div class="col-8 m-auto  text-center">
-                <label for="search-box" id="label">Search</label>
-                <input type="text" id="search-box" class="w-75 mx-3" placeholder="Country name">
+          <div class="row py-2 bg-info ">
+            <div class="col-10 col-md-7 mx-auto">
+            <div class="input-group ">
+              <div class="input-group-prepend ">
+                <span class="input-group-text">Search</span>
+              </div>
+              <input type="text"  class="form-control" id="search-box" placeholder="Country name">
             </div>
+          </div>
           </div>
       </section>
       <!-- global cases -->
+      <p id="date"></p>
       <div style="overflow-x: auto;">
       <section id="global-case">
         <div class="row py-2">
             <h2 class=" py-2 mx-auto">Global cases</h2>
           <div class="col-12 mx-auto">
-            <table class="table table-striped">
+            <table class="table table-striped table-bordered">
                 <thead class="thead-dark ">
                    <tr>
                       <th>NewConfirmed</th>
@@ -84,10 +95,9 @@
         <div class="row py-2 ">
             <h2 class=" py-2 mx-auto">Cases in India</h2>
           <div class="col-12 mx-auto">
-            <table class="table table-striped">
+            <table class="table table-striped table-bordered">
                 <thead class="thead-dark">
                    <tr>
-                      <th>Country</th>
                       <th>NewConfirmed</th>
                       <th>TotalConfirmed</th>
                       <th>NewDeaths</th>
@@ -105,8 +115,9 @@
       <!-- other country cases -->
       <section id="othercountry-case">
         <div class="row py-2">
+          <h2 class=" py-2 mx-auto">Other countries</h2>
           <div class="col-12 mx-auto">
-            <table class="table table-striped">
+            <table id="others" class="table table-striped table-bordered">
                 <thead class="thead-dark">
                    <tr>
                       <th>Country</th>
